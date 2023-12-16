@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Detail Project - Desa Babadan</title>
+    <title>Detail Project - Nabung</title>
     <style>
         /* Tambahkan CSS berikut pada file styles.css */
 
@@ -82,6 +82,25 @@ body {
     color: #0056b3; /* Hover color */
 }
 
+.rata{
+    text-align: justify;
+}
+
+/* Table */
+table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
     </style>
 </head>
 <body>
@@ -100,9 +119,123 @@ body {
     <section class="project-details">
         <h2 class="project-details__title">Nama Project: Nabung</h2>
         <p class="project-details__date">Tanggal Project: September 2023 - Desember 2023</p>
-        <p class="project-details__tools">Alat dan Perangkat Lunak yang Digunakan: HTML, CSS, PHP, WORDPRESS, Bootstrap</p>
-        <p class="project-details__description">Detail Project: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p>Link Gitlab : <a href="https://gitlab.com/mayer2/nabung-aplikasi-pengelola-keuangan">Nabung-Aplikasi Pengelola Keuangan</a></p>
+        <p class="project-details__tools">Alat dan Perangkat Lunak yang Digunakan: Figma, Java, Android Studio</p>
+        <p class="project-details__tools">Link Gitlab : <a href="https://gitlab.com/mayer2/nabung-aplikasi-pengelola-keuangan">Nabung-Aplikasi Pengelola Keuangan</a></p>
+        <p class="project-details__tools">Link Figma: <a href="https://www.figma.com/file/D7zO7E2ztSMUb3yTPlYrlA/Nabung?type=design&node-id=0%3A1&mode=design&t=VLbmhaj8adVjRI9N-1">Desain Nabung-Aplikasi Pengelola Keuangan</a></p>
+        <p class="project-details__tools">Link Dokumen Akhir Aplikasi Nabung: <a href="https://drive.google.com/file/d/1FsMgWssUoJ2zIKXnxUHuDyj271aL_PrK/view?usp=sharing">Dokumen Akhir Aplikasi Nabung</a></p>
+
+        <p class="project-details__description">Detail Project:</p>
+        <h3>Deskripsi Project</h3>
+        <p class="rata">Nabung merupakan aplikasi pengelola keuangan berbasis Android yang dirancang untuk membantu mengelola aspek keuangan pengguna secara efektif. Aplikasi ini mencakup implementasi fitur login, register, dan operasi CRUD untuk wish list barang, catatan pemasukan, serta catatan pengeluaran yang terintegrasi dengan Firebase, memanfaatkan Firebase Authentication dan Realtime Database.</p>
+
+        <h3>Permasalahan</h3>
+        <p class="rata">Dalam mengelola keuangan, seringkali kita dihadapkan pada tantangan untuk menyusun rencana pengeluaran, menghitung pemasukan, dan merencanakan investasi dengan efektif. Kurangnya kesadaran dan alat yang tepat untuk memonitor dan mengelola keuangan dapat menyebabkan ketidakpastian dalam mencapai tujuan keuangan pribadi. Selain itu, kesulitan dalam mencatat wishlist atau keinginan untuk berinvestasi juga dapat menjadi hambatan. Tanpa solusi yang efektif, individu mungkin kesulitan mencapai kemandirian keuangan dan mengoptimalkan potensi tabungan dan investasi mereka. </p>
+        
+        <h3>Solusi</h3>
+        <p class="rata">Aplikasi Nabung dihadirkan sebagai solusi untuk mengatasi permasalahan ini dengan menyediakan platform yang memungkinkan pengguna untuk mengelola keuangan pribadi, merencanakan investasi, dan mencatat wishlist dengan mudah. Dengan aplikasi ini, individu dapat memiliki pandangan yang lebih jelas terhadap keuangan mereka, membuat keputusan yang lebih bijak dalam pengelolaan uang, dan mencapai tujuan tabungan serta investasi dengan lebih efisien.</p>
+        
+        <h3>Pemodelan Sistem Berbasis Objek</h3>
+        <h4>Software Development Life Cycle (SDLC)</h4>
+        <p class="rata">Dalam konteks pengembangan aplikasi Nabung, metode pengembangan sistem waterfall diterapkan sebagai pendekatan utama. Metode ini mengorganisir pengembangan perangkat lunak menjadi serangkaian fase linier yang terurut, dimulai dari perencanaan, analisis, desain, implementasi, hingga pengujian. Setiap fase memiliki tanggung jawab dan tujuan tertentu, dan proyek berlanjut ke fase berikutnya setelah selesai sepenuhnya.</p>
+        
+        <h5>Functional Requirement</h5>
+        <table>
+            <tr>
+                <th>No.</th>
+                <th>Kode SRS</th>
+                <th>Software Requirement Statement</th>
+                <th>Level</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>SR-01</td>
+                <td>Sistem dapat menyediakan fitur register dan login kepada pengguna.</td>
+                <td>Normal</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>SR-02</td>
+                <td>Sistem dapat menambahkan pemasukan atau pengeluaran keuangan.</td>
+                <td>Normal</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>SR-03</td>
+                <td>Sistem dapat menampilkan pemasukan atau pengeluaran keuangan yang telah ditambahkan.</td>
+                <td>Normal</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>SR-04</td>
+                <td>Sistem dapat mengubah pemasukan atau pengeluaran keuangan yang telah ditambahkan.</td>
+                <td>Normal</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>SR-05</td>
+                <td>Sistem dapat menghapus pemasukan atau pengeluaran keuangan yang telah ditambahkan.</td>
+                <td>Normal</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>SR-06</td>
+                <td>Sistem dapat membuat wishlist barang yang ingin ditabung.</td>
+                <td>Exciting</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>SR-07</td>
+                <td>Sistem dapat mengubah wishlist barang yang telah ditambahkan.</td>
+                <td>Normal</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>SR-08</td>
+                <td>Sistem dapat menghapus wishlist barang yang telah ditambahkan.</td>
+                <td>Normal</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>SR-09</td>
+                <td>Sistem dapat menyediakan perencanaan pendanaan investasi berserta kalkulator investasi.</td>
+                <td>Exciting</td>
+            </tr>
+        </table>
+        <h5>Non-Functional Requirement</h5>
+        <table>
+            <tr>
+                <th>No.</th>
+                <th>Kode SRS</th>
+                <th>Software Requirement Statement</th>
+                <th>Level</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>NF-01</td>
+                <td>Sistem dapat diakses secara online.</td>
+                <td>Normal</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>NF-02</td>
+                <td>Sistem dapat diakses secara bersamaan oleh banyak pengguna.</td>
+                <td>Normal</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>NF-03</td>
+                <td>Sistem memiliki tingkat keamanan tinggi sehingga data terjamin.</td>
+                <td>Normal</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>NF-04</td>
+                <td>Sistem dapat diakses di berbagai perangkat mobile android.</td>
+                <td>Normal</td>
+            </tr>
+        </table>
+        <h4>Pengujian</h4>
+        <p class="rata">Pada tahap pengujian, kami melakukan pengujian dengan jenis white-box testing dan black-box testing. Kami melakukan pengujian basic path testing untuk jenis white-box testing, sedangkan pada black-box testing, kami melakukan automation testing menggunakan Katalon. Tahap pengujian dapat dilihat lebih lanjut ada pada dokumen akhir.</p>
     </section>
 
     <footer class="footer">
